@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<title>4 Directions</title>
+<!--[if lt IE 9]>
+     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+<style type="text/css">
+article {
+    display: block;
+}
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+#mainContent {
+    position: relative;
+    height: 100%;
+}
+.article {
+    position: relative;
+    float:left;
+    vertical-align: top;
+    overflow-y: scroll;
+    width: 500px;
+    height: 100%;
+}
+.article:nth-child(2n) p {
+    height: 1200px;
+    background-color: rgba(130,160,30,1);
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="mainContent">
+        <article class="article">
+            <h1>This is an article</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa quam, tristique ut consectetur eget, aliquet ut dolor. Aenean dignissim luctus turpis. Nam tempus placerat quam, quis viverra elit molestie non. Sed at dui enim, et fringilla urna. Sed interdum laoreet arcu, eu molestie leo mattis non. Phasellus at lectus justo. Curabitur quis sapien augue, at fringilla velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque ac sem metus, euismod pulvinar neque. Fusce pellentesque cursus augue varius tristique. Aenean quis ligula non enim imperdiet tristique id ut purus. Suspendisse quis turpis quis enim dapibus luctus non a nisi. Phasellus iaculis nunc eget mauris dapibus mollis aliquet nisi mollis. Aliquam facilisis massa sit amet ante adipiscing ac tincidunt dui vestibulum. Nulla tempus varius facilisis.</p>
+
+<p>Mauris euismod ornare egestas. Donec libero sapien, aliquam et vestibulum vitae, consequat non libero. Aenean iaculis bibendum augue, eget rhoncus urna semper sed. Maecenas scelerisque varius vehicula. Nunc ac laoreet sapien. Fusce viverra varius erat, vel facilisis enim adipiscing non. Pellentesque sed quam porta est euismod facilisis at eget nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nulla ac justo tempus tempus. Suspendisse a augue quis justo rutrum consequat. Vestibulum quis fermentum elit. Nullam elementum ligula tristique nibh porttitor ultricies. Nulla posuere pulvinar eros, aliquam varius diam eleifend eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<p>Integer lorem lectus, fringilla in aliquet sit amet, dictum et felis. Maecenas aliquam vulputate urna id pulvinar. Aenean auctor odio vel ante placerat sollicitudin. Sed ultrices neque non sapien blandit cursus. Nunc gravida sem vel nisi lacinia eu molestie metus sodales. Nullam vitae quam enim, vehicula iaculis nunc. Duis ipsum nisl, dignissim sit amet tincidunt et, tempor luctus arcu. Donec quis mi dui, sed sodales dui. Pellentesque vel nulla nisi, sit amet dignissim tortor. Integer imperdiet laoreet sapien at convallis. Sed mollis porttitor tellus eget consequat. Suspendisse potenti. Integer sed quam in turpis adipiscing sollicitudin. Maecenas tristique mollis nibh quis vulputate.
+</p>
+<p>Pellentesque nec lacus eu eros aliquam fringilla sed in enim. Nunc dapibus, metus vitae commodo vestibulum, lorem nisi laoreet erat, scelerisque congue enim lorem nec libero. Aenean metus lacus, laoreet in molestie sed, ornare nec neque. Praesent venenatis aliquet velit nec elementum. Donec porta urna a purus consequat quis malesuada felis consectetur. Vivamus ornare dictum ullamcorper. Phasellus augue eros, sagittis eget accumsan dictum, hendrerit sit amet libero. Donec et sapien vel lorem cursus fringilla ut at mi.
+</p>
+<p>Maecenas facilisis tempor egestas. Donec augue orci, elementum ut placerat vel, sagittis ut nulla. Etiam mattis pellentesque purus, non dignissim dui lobortis ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sem metus, consectetur ac vehicula ut, vulputate eget eros. Quisque vitae ligula odio. Curabitur ultrices, mauris eget tempus commodo, turpis quam lobortis enim, quis aliquet risus tellus sed arcu. Vestibulum euismod mi ac tellus dapibus aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In non ultrices leo. Aliquam erat volutpat. Donec sed tristique augue.a
+        </p>        </article>
+        <article class="article">
+            <h1>This is another article</h1>
+            <p>more sample text here</p>
+        </article>
+        <article class="article">
+            <h1>Yet another article</h1>
+            <p>still text</p>
+        </article>
+        <article class="article">
+            <h1>Article Four</h1>
+            <p>I guess this must be the fourth article.</p>
+        </article>
+    </div>
+</div>
+<script type="text/javascript">
+(function() {
+var ARTICLE_WIDTH = 500;
+
+var wrapper = document.getElementById('wrapper'),
+    mainContent = document.getElementById('mainContent'),
+    // articles = document.getElementsByClassName('article'); // only IE 9+
+    articles = mainContent.getElementsByTagName('article');
+
+mainContent.style.width = ARTICLE_WIDTH * articles.length + 'px';
+wrapper.style.width = mainContent.style.width;
+})();
+</script>
+</body>
+</html>
